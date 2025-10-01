@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { ClickEvent } from 'devextreme/ui/button';
+import notify from 'devextreme/ui/notify';
+import { DxButtonTypes } from 'devextreme-angular/ui/button';
+import { DxTextBoxTypes } from 'devextreme-angular/ui/text-box';
+
+type ToolbarButtonOptions = DxButtonTypes.Properties;
+type SearchBoxOptions = DxTextBoxTypes.Properties;
 
 @Component({
   selector: 'app-root',
@@ -7,14 +12,62 @@ import { ClickEvent } from 'devextreme/ui/button';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Angular';
+  backButtonOptions: ToolbarButtonOptions = {
+    icon: 'back',
+    onClick: () => {
+      this.showMessage('Back');
+    },
+  };
 
-  counter = 0;
+  textBoxOptions: SearchBoxOptions = {
+    placeholder: 'Search...',
+    showClearButton: true,
+  };
 
-  buttonText = 'Click count: 0';
+  searchButtonOptions: ToolbarButtonOptions = {
+    icon: 'search',
+    onClick: () => {
+      this.showMessage('Search');
+    },
+  };
 
-  onClick(e: ClickEvent): void {
-    this.counter++;
-    this.buttonText = `Click count: ${this.counter}`;
+  aboutButtonOptions: ToolbarButtonOptions = {
+    icon: 'info',
+    text: 'About',
+    onClick: () => {
+      this.showMessage('About');
+    },
+  };
+
+  profileButtonOptions: ToolbarButtonOptions = {
+    icon: 'user',
+    text: 'Profile',
+    onClick: () => {
+      this.showMessage('Profile');
+    },
+  };
+
+  settingsButtonOptions: ToolbarButtonOptions = {
+    icon: 'preferences',
+    text: 'Settings',
+    onClick: () => {
+      this.showMessage('Settings');
+    },
+  };
+
+  private showMessage(name: string): void {
+    notify(
+      {
+        message: `${name} button has been clicked!`,
+        width: 300,
+        position: {
+          my: 'bottom',
+          at: 'bottom',
+          of: '#app-container',
+        },
+      },
+      'info',
+      500,
+    );
   }
 }

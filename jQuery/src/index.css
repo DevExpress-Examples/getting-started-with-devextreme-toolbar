@@ -1,4 +1,17 @@
-.demo-container {
-    margin: 50px;
-    width: 90vw;
+#app-container {
+  width: 500px;
+  height: 180px;
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 50px;
+}
+
+#back {
+  margin-left: 5px;
+}
+
+#greeting {
+  text-align: center;
+  margin: 7px;
 }

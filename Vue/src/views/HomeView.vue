@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import HomeContent from '../components/HomeContent.vue';
+import ToolbarContent from '../components/ToolbarContent.vue';
 </script>
 
 <template>
-  <HomeContent text="Count"/>
+  <ToolbarContent/>
 </template>
 

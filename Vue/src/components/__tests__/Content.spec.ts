@@ -1,11 +1,11 @@
 import { describe, it, expect } from 'vitest';
 
 import { mount } from '@vue/test-utils';
-import Content from '../HomeContent.vue';
+import ToolbarContent from '../ToolbarContent.vue';
 
-describe('Content', () => {
+describe('ToolbarContent', () => {
   it('renders properly', () => {
-    const wrapper = mount(Content, { props: { text: 'count' } });
-    expect(wrapper.text()).toContain('count');
+    const wrapper = mount(ToolbarContent);
+    expect(wrapper.text()).toContain('Getting Started with DevExtreme Vue Toolbar');
   });
 });

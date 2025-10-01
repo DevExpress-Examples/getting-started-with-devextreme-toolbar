@@ -1,4 +1,17 @@
-.default-style {
+#app-container {
+  width: 500px;
+  height: 170px;
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ddd;
   margin: 50px;
-  width: 90vw;
+}
+
+#back {
+  margin-left: 5px;
+}
+
+#greeting {
+  text-align: center;
+  margin: 7px;
 }
