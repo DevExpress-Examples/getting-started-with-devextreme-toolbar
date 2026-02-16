@@ -29,7 +29,7 @@ This repository stores the code examples of the Toolbar component for the [Getti
 
 - [Toolbar - API Reference](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxToolbar/)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=getting-started-with-devextreme-toolbar&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=getting-started-with-devextreme-toolbar&~~~was_helpful=no)
 
