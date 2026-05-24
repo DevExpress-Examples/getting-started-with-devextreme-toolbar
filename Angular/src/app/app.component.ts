@@ -6,11 +6,13 @@ import { DxTextBoxTypes } from 'devextreme-angular/ui/text-box';
 type ToolbarButtonOptions = DxButtonTypes.Properties;
 type SearchBoxOptions = DxTextBoxTypes.Properties;
 
+import { DxToolbarModule } from 'devextreme-angular/ui/toolbar';
+
 @Component({
     selector: 'app-root',
+    imports: [DxToolbarModule],
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    standalone: false
 })
 export class AppComponent {
   backButtonOptions: ToolbarButtonOptions = {
